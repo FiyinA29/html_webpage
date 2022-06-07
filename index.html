@@ -1,38 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
     <script src="https://code.iconify.design/iconify-icon/0.0.6/iconify-icon.min.js"></script>
     <title>Sneaker Freak</title>
 </head>
-<body>
-    <header>
+
+<body id="body">
+    <div id="container">
+        <header id="header-container">
+            <div id="header-left-col">
                 <label class="switch">
                     <input type="checkbox">
                     <span class="slider round"></span>
                 </label>
-            
                 <select name="currency" id="currency">
-                    <option >GBP</option>
+                    <option>GBP</option>
                     <option>USD</option>
                     <option>EUR</option>
                 </select>
-        <div>
-        <a href="">
-            <img src="https://source.unsplash.com/W4swGaKFHVQ" alt="Sneaker Freak Logo, established 2022" height="200" width="200" style="float: left; vertical-align:top; margin:-20px 150px;">
-        </a>
-        <h1 style="font-size: 300%; color:dodgerblue; float:left; vertical-align:middle;margin:120px -140px">SF</h1>
-        </div>
-        <form id="form" style="float:left; vertical-align:middle;margin:-20px 200px;"> 
-            <input type="search" id="query" name="q" placeholder="Search...">
-            <button>Search</button>
-        </form>
-            <span style="font-size: 20px; float:right; vertical-align:middle;margin:-25px 200px;">&#9825;</span>
-            <iconify-icon icon="bx:user" style="font-size: 20px; float:right; vertical-align:middle;margin:-20px 150px;"></iconify-icon>
-            <iconify-icon icon="ant-design:shopping-cart-outlined" style="font-size: 20px; float:right; vertical-align:middle;margin:-20px 100px;"></iconify-icon>
+            </div>
+            <div id="logo">
+                <a href="">
+                    <img src="/Users/user/bnta/coursework/week_09/day_01/sneaker_freak/images/logo.jpeg"
+                        alt="Sneaker Freak Logo, established 2022" height="130" width="130">
+                </a>
+            </div>
+            <form id="form">
+                <input type="search" id="query" name="q" placeholder="Search...">
+                <button>Search</button>
+            </form>
+            <div id="header-right-col"></div>
+            <div id="heart-icon">
+                <a href="">
+                    <iconify-icon icon="akar-icons:heart" style="color: black;"></iconify-icon>
+                </a>
+            </div>
+            <div id="user-icon">
+                <a href="">
+                    <iconify-icon icon="bx:user" style="color: black;"></iconify-icon>
+                </a>
+            </div>
+            <div id="cart-icon">
+                <a href="">
+                    <iconify-icon icon="ant-design:shopping-cart-outlined"
+                        style="color: black; width: 30px; height: 30;"></iconify-icon>
+                </a>
+            </div>
+    </div>
     </header>
-    
+    <main class="grid-container-center">
+        <figure class="grid-item">
+            <img src="https://source.unsplash.com/aDZ5YIuedQg/500x500" alt="Sneaker Image">
+            <figcaption>Release Details: June 13, 2022 8:00AM</figcaption>
+            <figcaption>Price: £150</figcaption>
+            <figcaption>Brand: Nike</figcaption>
+            <figcaption>Model: Air Jordan 1</figcaption>
+        </figure>
+    </main>
+    <footer id="footer-container">
+        <div id="footer-center-col">
+            <nav id="footer-menu">
+                <ul>
+                    <li><a href="#">TODAY'S DROPS</a></li>
+                    <li><a href="#">MEN</a></li>
+                    <li><a href="#">WOMEN</a></li>
+                    <li><a href="#">KIDS</a></li>
+                    <li><a href="#">SALES</a></li>
+                </ul>
+                <p>Save 10% With Code SF10</p>
+            </nav>
+        </div>
+    </footer>
+    </div>
 </body>
+
 </html>
